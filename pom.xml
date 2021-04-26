@@ -30,7 +30,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <version.common.lang>3.8.1</version.common.lang>
-        <version.apache.commons.io>2.6</version.apache.commons.io>
+        <version.apache.commons.io>2.7</version.apache.commons.io>
         <version.gson>2.8.5</version.gson>
         <version.guava>27.1-jre</version.guava>
         <version.jdom2>2.0.6</version.jdom2>
