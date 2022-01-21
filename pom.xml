@@ -41,7 +41,7 @@
         <version.mockito>2.19.1</version.mockito>
         <version.mockito.all>1.10.19</version.mockito.all>
         <version.liquibase>3.6.2</version.liquibase>
-        <version.h2>1.4.197</version.h2>
+        <version.h2>2.1.210</version.h2>
         <version.htmlunit>2.33</version.htmlunit>
         <version.darts.google.cloud>1.2-SNAPSHOT</version.darts.google.cloud>
         <version.lombok>1.18.4</version.lombok>
