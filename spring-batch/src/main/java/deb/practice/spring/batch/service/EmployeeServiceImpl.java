@@ -2,6 +2,7 @@ package deb.practice.spring.batch.service;
 
 import com.google.common.collect.Lists;
 import deb.practice.spring.batch.entity.Employee;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  * Created by Deb
  * Date : 11/27/2022
  */
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public List<Employee> getEmployees() {
