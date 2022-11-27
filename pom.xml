@@ -14,6 +14,7 @@
         <module>spring-ehcache</module>
         <module>spring-composite-key</module>
         <module>spring-jwt-web</module>
+        <module>spring-batch</module>
     </modules>
     <packaging>pom</packaging>
     <name>web-practice-repo</name>
