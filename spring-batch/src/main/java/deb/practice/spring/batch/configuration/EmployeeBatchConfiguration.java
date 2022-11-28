@@ -16,6 +16,8 @@ import org.springframework.batch.item.ItemReader;
 import org.springframework.batch.item.ItemWriter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.task.SimpleAsyncTaskExecutor;
+import org.springframework.core.task.TaskExecutor;
 
 /**
  * Created by Deb
@@ -57,6 +59,7 @@ public class EmployeeBatchConfiguration {
                 .reader(itemReader())
                 .processor(itemProcessor())
                 .writer(itemWriter())
+                .taskExecutor(taskExecutor())
                 .build();
     }
 
@@ -64,6 +67,13 @@ public class EmployeeBatchConfiguration {
     public Job job() {
         return this.jobBuilderFactory.get("importEmployeeDetails")
                 .flow(step()).end().build();
+    }
+
+    @Bean
+    public TaskExecutor taskExecutor() {
+        SimpleAsyncTaskExecutor asyncTaskExecutor = new SimpleAsyncTaskExecutor();
+        asyncTaskExecutor.setConcurrencyLimit(10);
+        return asyncTaskExecutor;
     }
 
 }
