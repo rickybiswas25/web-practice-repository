@@ -37,7 +37,7 @@
         <version.jdom2>2.0.6</version.jdom2>
         <version.slf4j>1.7.25</version.slf4j>
         <version.bouncycastle>1.46</version.bouncycastle>
-        <version.spring.boot>2.3.1.RELEASE</version.spring.boot>
+        <version.spring.boot>2.5.12</version.spring.boot>
         <version.junit.jupiter>5.4.0</version.junit.jupiter>
         <version.mockito>2.19.1</version.mockito>
         <version.mockito.all>1.10.19</version.mockito.all>
